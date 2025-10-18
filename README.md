@@ -8,13 +8,10 @@
 
 # Explanation:
 Experiment the persona pattern as a programmer for any specific applications related with your interesting area. 
-Generate the outoput using more than one AI tool and based on the code generation analyse and discussing that. 
+Generate the output using more than one AI tool and based on the code generation analyse and discussing that. 
 
 # Conclusion:
 Title: Framing Prompts for AI-Assisted Project Coding
-
-Date: [Insert Date]
-Register Number: [Insert Register Number]
 
 Objective
 
@@ -36,28 +33,48 @@ Prompt: “Based on the comparison results, suggest meaningful insights or next 
 
 AI-Generated Responses
 
-Python Code Output:
+1. Python Code Output:
 
-Code for fetching API data, storing in CSV, comparing values, and generating a summary table.
+Code for fetching API data, storing in CSV, and reading both CSVs for comparison.
 
-Explanation:
+2. Comparison Example (Simulated Data):
 
-AI provided step-by-step comments in the code explaining API requests, data handling, and comparison logic.
+API 1 Output
 
-Insights:
+ID	Name	Value
+1	Alpha	100
+2	Beta	200
+3	Gamma	300
 
-Suggested trends, anomalies, and next steps for analysis based on API outputs.
+API 2 Output
+
+ID	Name	Value
+1	Alpha	100
+2	Beta	250
+4	Delta	400
+
+Comparison Result:
+
+ID 2 (Beta) has a Value mismatch: 200 vs 250
+
+ID 3 (Gamma) is missing in API 2
+
+ID 4 (Delta) is missing in API 1
+
+3. AI-Generated Insights:
+
+There are inconsistencies between the two APIs that require data validation.
+
+Some records appear only in one API, suggesting incomplete data.
+
+Next steps: reconcile differences, check API data sources, and ensure completeness before analysis.
 
 Reflection
 
-The prompts were effective in guiding AI to produce working Python code and meaningful comparisons.
+Clear, structured prompts helped generate accurate Python code and correct comparisons.
 
-Clear, structured prompts resulted in more accurate outputs than broad or vague prompts.
+The comparison table clearly highlights discrepancies between API outputs.
 
-Could improve by adding specific data formats or constraints to make outputs even more precise.
-
-Result / OUTPUT
-
-The prompts were executed successfully. AI generated the Python code, comparison outputs, and actionable insights as expected.
+Improvements: Add specific rules for comparison, like ignoring minor formatting differences or adding thresholds for numeric value mismatches.
 
 # Result: The corresponding Prompt is executed successfully.
